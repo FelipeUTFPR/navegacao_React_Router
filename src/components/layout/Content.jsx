@@ -10,6 +10,7 @@ const Content = props =>(
         <main className='Content'>
         
         <Routes>
+        
             <Route path="about" element={<About/>}/>
             {/* :d será um valor passado a partir da url */}
             <Route path="param/:id" element={<Param/>}/>

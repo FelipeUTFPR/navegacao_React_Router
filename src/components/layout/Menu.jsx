@@ -22,6 +22,11 @@ const Menu = props =>(
                     <li>
                         <Link to='/about'>Sobre</Link>
                     </li>
+                    <li>
+                    {/* Comportamento ao clicar numa página que não existe
+                é de não renderizar nada na tela */}
+                        <Link to='/naoExiste'>Não Existe</Link>
+                    </li>
 
                    
                 </ul>
