@@ -5,6 +5,7 @@ import {Routes, Route} from 'react-router-dom'
 import About from '../../views/examples/About'
 import Param from '../../views/examples/Param'
 import Home from '../../views/examples/Home'
+import NotFound from '../../views/examples/NotFound'
 
 const Content = props =>(
         <main className='Content'>
@@ -15,6 +16,7 @@ const Content = props =>(
             {/* :d será um valor passado a partir da url */}
             <Route path="param/:id" element={<Param/>}/>
             <Route path="/" element={<Home/>}/>
+            <Route path="*" element={<NotFound/>}/>
             
             </Routes>
         </main>
